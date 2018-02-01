@@ -1,6 +1,5 @@
 # Simple-Image-Proxy
 
-``
 ### get the code
 git clone https://github.com/darkalchemy/Simple-Image-Proxy.git image-proxy
 
@@ -20,4 +19,3 @@ npm install
 cp .env.sample .env
 
 ### edit .env and supply the key used to encrypt
-``
