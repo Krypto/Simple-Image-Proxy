@@ -9,7 +9,9 @@ chown -R www-data:www-data image-proxy
 
 ### install dependancies
 cd image-proxy
+
 composer install
+
 npm install
 
 ### set webroot to path image-proxy/public
