@@ -1,7 +1,7 @@
 # Simple-Image-Proxy
 
 ``
-###get the code
+### get the code
 git clone https://github.com/darkalchemy/Simple-Image-Proxy.git image-proxy
 
 ### set ownership
