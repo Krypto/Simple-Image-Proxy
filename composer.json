@@ -4,6 +4,7 @@
         "blocktrail/cryptojs-aes-php": "^0.1.0",
         "spatie/image": "^1.4",
         "spatie/image-optimizer": "^1.0",
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^2.4",
+        "guzzlehttp/guzzle": "~6.0"
     }
 }

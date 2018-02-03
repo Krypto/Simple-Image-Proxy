@@ -38,14 +38,18 @@ function decrypt_url($img_string)
                 $image = $manager->make($path);
             }
             return $image->response();
-        } elseif (file_put_contents($path, file_get_contents($url))) {
-            optimize($path);
-            if (!empty($width) && !empty($height)) {
-                $image = $manager->make($path)->resize($width, $height);
-            } else {
-                $image = $manager->make($path);
+        } else {
+            $client = new GuzzleHttp\Client();
+            $response = $client->request('GET', $url, ['sink' => $path]);
+            if ($response->getStatusCode()) {
+                optimize($path);
+                if (!empty($width) && !empty($height)) {
+                    $image = $manager->make($path)->resize($width, $height);
+                } else {
+                    $image = $manager->make($path);
+                }
+                return $image->response();
             }
-            return $image->response();
         }
     }
     return null;
