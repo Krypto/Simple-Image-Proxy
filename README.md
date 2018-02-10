@@ -11,11 +11,13 @@ cd image-proxy
 
 composer install
 
-npm install
-
 ### set webroot to path image-proxy/public
 
-### copy .env.sample to .env
-cp .env.sample .env
+### edit settings.php
 
-### edit .env and supply the key used to encrypt
+
+## Usage
+
+use Blocktrail\CryptoJSAES\CryptoJSAES;
+$encrypte = CryptoJSAES::encrypt(url, key);
+return 'http://image_proxy_url/image?' . base64_encode($encrypted . '&uid=' . uid);

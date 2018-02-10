@@ -1,3 +1,8 @@
+10 Feb 2018
+update: use uid=>key to allow multiple users/sites to share the same image proxy
+use: Slim Framework
+add: return noposter.png if anything fails
+
 3 Feb 2018
 replace: file_get_contents with GuzzleHttp\Client
 
