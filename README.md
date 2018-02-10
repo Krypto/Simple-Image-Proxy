@@ -1,6 +1,9 @@
 # Simple-Image-Proxy
-The purpose of this image proxy is to reduce the exposure of the requesting sites url by using the image proxy to make the http request, store the image and return the http response. 
+The purpose of this image proxy is to reduce the exposure of the requesting sites url, when hot-linking images, by using the image proxy to make the http request, store the image and return the image from the proxy in an http response.
 
+This could also be used to serve images that are using http links on your https site. Thereby not opening up a security hole.  
+
+This image proxy will store an optimized for web version of the original image and can return that image in any dimensions that are included with the http request. 
 
 # How To:
 #### get the code
